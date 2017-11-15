@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Контакты</title>
+</head>
+<body>
+
+<!--BEGIN HEADER
+ =============================================================== -->
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="holder-header">
+                <a href="#" class="toggler"></a>
+                <a href="#" class="logo"><img src="images/logo.png" alt="Logo"></a>
+                <nav>
+                    <div class="navbar">
+                        <ul class="nabvar-nav">
+                            <li class="nav-item"><a href="index.html">ГЛАВНАЯ</a></li>
+                            <li class="nav-item"><a href="about_us.html">О НАС</a></li>
+                            <li class="nav-item"><a href="completed_projects.html">реализованые проекты</a></li>
+                            <li class="nav-item"><a href="products_services.html">продукция и УСЛУГИ</a></li>
+                            <li class="nav-item"><a href="vacancies.html">вакансии</a></li>
+                            <li class="nav-item"><a href="open_news.html">новости</a></li>
+                            <li class="nav-item active"><a href="contacts.html">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="contacts_page">
+        <div class="container">
+            <section class="section main_section_contacts main_section">
+                <div class="holder_contacts">
+                    <nav>
+                        <div class="parent">
+                            <ul class="navbar_contacts">
+                                <li class="address"><a href="#">юр. адрес: <span>ул. Лодзинская, 7-а</span></a></li>
+                                <li class="index"><a href="#">почтовый индекс: <span> 61099</span></a></li>
+                                <li class="phone_number"><a href="tel:0577812508">телефон/факс:
+                                    <span>057-781-25-08</span></a></li>
+                                <li class="email"><a href="mailto:ekovtor2011@gmail.com">e-mail: <span> ekovtor2011@gmail.com</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="localisation">
+                        <div id="map"></div>
+                    </div>
+                    <div class="contact_form">
+                        <div class="title_forms">
+                            <h2>Eсли у Вас возникли вопросы и предложения, можете воспользоваться формой обратной связи
+                                ниже:</h2>
+                        </div>
+                        <form>
+                            <div class="form_group">
+                                <div>
+                                    <input type="text" placeholder="ФИО">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Организация">
+                                </div>
+                                <div>
+                                    <input type="tel" placeholder="Телефон">
+                                </div>
+                                <div>
+                                    <input type="email" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="area_holder">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                                <input class="area_btn" type="button" value="отправить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_holder">
+                <div>
+                    <div class="footer_logo">
+                        <a href="#"><img src="images/footer_logo.png" alt="logo"></a>
+                    </div>
+                    <div class="footer_nav">
+                        <ul class="main_list">
+                            <li><a href="#">ГЛАВНАЯ</a></li>
+                            <li><a href="#">О НАС</a></li>
+                            <li><a href="#">вакансии</a></li>
+                            <li><a href="#">новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer_nav">
+                        <ul class="contact_list">
+                            <li><a href="#">продукция и услуги</a></li>
+                            <li><a href="#">реализованные проекты</a></li>
+                            <li><a href="#">контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook circle-icon" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus circle-icon" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play circle-icon" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr7Vd9wIFrTqoXqUUsBPXaHseTe_PI5AA&callback=initMap">
+</script>
+<script src="js/common.js"></script>
+</body>
+</html>

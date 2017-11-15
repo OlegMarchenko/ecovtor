@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+  padding-top: 25px;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.nabvar-nav {
+  text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+  a {
+    color: $brand_color;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 4px 9px;
+    margin: 0 2px;
+    border: 1px solid transparent;
+    font-family: $semibold;
+    transition: .3s all;
+  }
+}
+
+.nav-item.active a,
+.nav-item a:hover {
+  border: 1px solid $brand_color;
+}
+
+.holder-header {
+  position: relative;
+}
