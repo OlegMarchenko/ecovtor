@@ -25,12 +25,14 @@
     border: 1px solid transparent;
     font-family: $semibold;
     transition: .3s all;
+    background-clip: padding-box;
   }
 }
 
 .nav-item.active a,
 .nav-item a:hover {
   border: 1px solid $brand_color;
+  border-image: -webkit-linear-gradient(45deg,#a5d795,#185a04) 20 stretch;
 }
 
 .holder-header {

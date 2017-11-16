@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-clip: padding-box;
+  border-top: 1px solid $brand_color;
+  border-image: -webkit-linear-gradient(45deg,#a5d795,#185a04) 20 stretch;
 }
 
 .footer_nav {
@@ -15,6 +18,10 @@
     color: $brand_color;
     font-size: 12px;
     font-family: $semibold;
+    transition: .3s all;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   li {
     line-height: 1.25;
@@ -46,7 +53,7 @@
   text-align: center;
   line-height: 24px;
   vertical-align: middle;
-  transition: .3s opacity;
+  transition: all .3s ease-in-out;
   &:hover {
     opacity: .8;
   }
@@ -57,7 +64,6 @@
 }
 
 .footer_holder {
-  border-top: 1px solid $brand_color;
   > div {
     display: flex;
     margin: 0 15px 15px 15px;

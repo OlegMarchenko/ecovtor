@@ -91,6 +91,10 @@ main.main-page {
 
 .card_title h3 {
   font-weight: normal;
+  transition: all .3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .card_top {
@@ -230,11 +234,11 @@ main.main-page {
 
 .navbar_contacts {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 
   li {
     display: inline-block;
-    padding: 10px 25px;
+    padding: 10px 10px 10px 25px;
   }
   a {
     display: block;
@@ -374,6 +378,11 @@ textarea {
   position: absolute;
   bottom: 8px;
   right: 0;
+  transition: .3s all;
+  &:hover {
+    background: rgba(24, 90, 4, .9);
+    font-size: 13px;
+  }
 }
 
 .area_holder {
@@ -401,6 +410,44 @@ textarea {
 }
 
 //PAGINATION
+
+.prev_arrow,
+.next_arrow {
+  position: relative;
+  text-indent: -99999px;
+  transition: .6s all ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.next_arrow {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 15px;
+    left: 13px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid $brand_color;
+    border-right: 2px solid $brand_color;
+    transform: rotate(-45deg);
+  }
+}
+
+.prev_arrow {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 15px;
+    left: 16px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid $brand_color;
+    border-left: 2px solid $brand_color;
+    transform: rotate(45deg);
+  }
+}
 
 @keyframes cdp-in {
   from {
@@ -647,7 +694,9 @@ textarea {
 
 .card_product {
   display: flex;
+  background-clip: padding-box;
   border: 1px solid $brand_color;
+  border-image: -webkit-linear-gradient(10deg,#a5d795,#185a04) 20 stretch;
 }
 
 .title_product {
@@ -749,8 +798,12 @@ textarea {
   display: block;
   font-size: 12px;
   color: #fff;
-  background-image: linear-gradient(-30deg, #185a04 0%, #a5d795 100%);
-  padding: 9px 16px 13px 16px;
+  background: linear-gradient(-30deg, #185a04 0%, #a5d795 100%);
+  padding: 5px 16px 8px 16px;
+  transition: background .6s ease-out;
+  &:hover {
+    background-position: 142px;
+  }
 }
 
 .card_vacancies_holder {
@@ -858,6 +911,10 @@ textarea {
     > div {
       display: inline-block;
       margin: 0 17px;
+      transition: .3s all ease-in-out;
+      &:hover {
+        transform: scale(0.7);
+      }
       a {
         width: 48px;
         height: 48px;
@@ -904,8 +961,12 @@ textarea {
     display: block;
     font-size: 12px;
     color: #fff;
-    background-image: linear-gradient(-30deg, #185a04 0%, #a5d795 100%);
+    background: linear-gradient(-30deg, #185a04 0%, #a5d795 100%);
     padding: 3px 10px 5px 10px;
+    transition: background .6s ease;
+    &:hover {
+      background-position: 95px;
+    }
   }
 }
 
