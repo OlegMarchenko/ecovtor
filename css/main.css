@@ -1609,6 +1609,20 @@ textarea {
   line-height: 1.2;
   margin: -5px 0 0 0; }
 
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #185a04;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a2d492 0%, #1b5d07 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a2d492 0%, #1b5d07 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#a2d492), to(#1b5d07));
+  background: -o-linear-gradient(top, #a2d492 0%, #1b5d07 100%);
+  background: linear-gradient(to bottom, #a2d492 0%, #1b5d07 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2d492', endColorstr='#1b5d07',GradientType=0 );
+  /* IE6-9 */ }
+
 .footer_holder {
   background: #fff;
   padding: 26px 40px;
