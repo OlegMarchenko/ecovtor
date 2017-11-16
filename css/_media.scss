@@ -231,6 +231,13 @@
       width: 100%;
     }
   }
+  .navbar_contacts {
+    flex-direction: column-reverse;
+    align-items: center;
+    > li {
+      width: 80%;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
