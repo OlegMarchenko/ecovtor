@@ -8,6 +8,7 @@ $(document).ready(function () {
                     $(this).removeAttr('style');
                 }
             });
+            $(this).toggleClass('open');
         });
 
     }

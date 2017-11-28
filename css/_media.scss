@@ -71,13 +71,73 @@
 @media screen and (max-width: 700px) {
   .toggler {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    background: url(../images/menu.png) no-repeat;
+    position: fixed;
+    top: 35px;
+    right: 22px;
+    width: 53px;
+    height: 53px;
+    border: 2px solid $brand_color;
+    border-radius: 50%;
     z-index: 2000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    span {
+      display: block;
+      position: absolute;
+      height: 7px;
+      width: 65%;
+      background: $brand_color;
+      border-radius: 9px;
+      opacity: 1;
+      left: 50%;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+      transform: translateX(-50%);
+      &:nth-child(1) {
+        top: 10px;
+        transform-origin: left center;
+      }
+      &:nth-child(2) {
+        top: 21px;
+        transform-origin: left center;
+      }
+      &:nth-child(3) {
+        top: 31px;
+        transform-origin: left center;
+      }
+    }
+    &.open span {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        top: 9px;
+        left: 13px;
+      }
+      &:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 32px;
+        left: 13px;
+      }
+    }
+  }
+  .logo {
+    text-align: left;
   }
   .navbar {
     display: none;
@@ -165,6 +225,10 @@
       padding: 10px 10px 10px 25px;
     }
   }
+
+  main.main-page {
+    background: url(../images/bg-island.png) center bottom -125px no-repeat;
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -240,19 +304,17 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
   .footer_holder > div:first-child,
   .footer_holder > div:last-child {
     flex-direction: column;
   }
+  .footer_holder > div:first-child {
+    margin: 0;
+  }
 
   .footer_nav {
-    width: 100%;
-    text-align: center;
-    li {
-      display: inline-block;
-      margin: 0 8px;
-    }
+    display: none;
   }
   .footer_logo {
     margin-bottom: 10px;

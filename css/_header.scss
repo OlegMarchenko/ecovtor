@@ -24,7 +24,6 @@
     margin: 0 2px;
     border: 1px solid transparent;
     font-family: $semibold;
-    transition: .3s all;
     background-clip: padding-box;
   }
 }
@@ -32,7 +31,10 @@
 .nav-item.active a,
 .nav-item a:hover {
   border: 1px solid $brand_color;
-  border-image: -webkit-linear-gradient(45deg,#a5d795,#185a04) 20 stretch;
+  border-image: -moz-linear-gradient(left, #a5d795 0%, #8dc27c 50%, #185a04 100%)  10 stretch; /* FF3.6-15 */
+  border-image: -webkit-linear-gradient(left, #a5d795 0%,#8dc27c 50%,#185a04 100%)  10 stretch; /* Chrome10-25,Safari5.1-6 */
+  border-image: linear-gradient(to right, #a5d795 0%,#8dc27c 50%,#185a04 100%)  10 stretch; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5d795', endColorstr='#185a04',GradientType=1 ); /* IE6-9 */
 }
 
 .holder-header {
